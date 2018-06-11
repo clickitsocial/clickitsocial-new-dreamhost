@@ -1,0 +1,1332 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+}
+
+footer {
+    margin-top: 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.black-font {
+    color: #f26522 !important;
+}
+
+/*TypeJs Color*/
+
+.orange {
+    color: #F26522;
+}
+
+/*Hamburger button*/
+
+.container {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    z-index: 6;
+}
+
+/*Sticky Nav Button*/
+
+.navigation .container-left {
+    display: none;
+}
+
+/*Mobile Hamburger Nav*/
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*------------Header and Nav--------------------*/
+
+.navigation {
+    width: 100%;
+    height: 4.5em;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 10px 25px 3px black;
+}
+
+.site-icon {
+    width: 15em;
+    height: auto;
+    margin: 0.5em 0 0 2.5em;
+}
+
+.site-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation-icon {
+    display: none;
+}
+
+.fa-laptop {
+    display: none;
+}
+
+.navigation ul {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    width: 24.3%;
+    margin-top: 1.4em;
+    margin-left: calc(-24.3% / 2);
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+    margin-right: 10%;
+    white-space: nowrap;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em
+}
+
+.navigation li a:hover {
+    color: #F26522;
+}
+
+.navigation-phone {
+    font-size: 1.4em;
+    color: #F26522;
+    margin-right: 2.5em;
+    display: none;
+}
+
+.navigation-phone a {
+    color: #F26522;
+}
+
+/*-----------Sticky Nav Styles-------------*/
+
+.navigation-fixed {
+    position: fixed;
+    background-color: #244381;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    z-index: 100;
+    border-bottom: 0.3px solid orange;
+    transition: background-color ease-in-out 0.5s;
+    box-shadow: 10px 2px 25px 2px black;
+}
+
+/*Sticky Nav Button*/
+
+.navigation-fixed .container-left {
+    display: block;
+    position: absolute;
+    right: 1.5em;
+    cursor: pointer;
+    padding: 0.5%;
+}
+
+.navigation-fixed .navigation-icon {
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    color: white;
+    margin-left: 1em;
+}
+
+.navigation-fixed .fa-laptop {
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    color: white;
+    margin-left: 1.3em;
+}
+
+.navigation-fixed .fa-mobile-alt {
+    margin-left: 1.2em;
+}
+
+.navigation-fixed ul {
+    display: list-item;
+    width: 100vw;
+    height: 0;
+    margin-top: 3.1em;
+    background-color: #2c2e30;
+    position: static;
+    margin-left: 0em;
+    padding-left: 0;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.sticky-nav-toggle {
+    height: 100vh !important;
+}
+
+.navigation-fixed li:first-child {
+    margin-top: 7em;
+}
+
+.navigation-fixed li {
+    display: block;
+    width: 100%;
+    height: 2em;
+    margin-bottom: 3em;
+}
+
+.navigation-fixed li a {
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 1.1em;
+    width: 50%;
+    margin: auto;
+}
+
+.navigation-fixed .site-icon {
+    position: absolute;
+    left: 50%;
+    width: 12em;
+    height: auto;
+    margin-left: calc(-12em / 2);
+    margin-top: 0.2em;
+}
+
+.navigation-fixed .site-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation-fixed .navigation-phone {
+    display: none;
+}
+
+/*-----------Mobile Nav Styles-------------*/
+
+.navigation.responsive {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+}
+
+.navigation.responsive li {
+    display: flex;
+    background-color: red;
+    width: 100%;
+}
+
+.navigation.responsive li a {
+    text-decoration: none;
+}
+
+.ul-other-pages li a {
+    color: #E82F0C;
+}
+
+/*--------------Landing page wordings------------------*/
+
+.landing-page-wrapper {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.landing-page-text-container {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    font-size: 1.1em;
+    color: white;
+    left: 0;
+}
+
+.landing-page-text-container h2 {
+    width: 100%;
+    margin: auto;
+}
+
+.landing-page-text-container h3 {
+    width: 75%;
+    margin: auto;
+}
+
+.landing-page-button {
+    width: 12em;
+    height: 2.5em;
+    margin: 2.5em auto;
+    padding-top: 0.7em;
+    background-color: #E82F0C;
+    border-radius: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.landing-page-button:hover {
+    background-color: #F26522;
+}
+
+.landing-page-button a {
+    Color: white;
+}
+
+.landing-page-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.landing-page-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    background-color: #2c2e30;
+}
+
+/*--------------Clickit About Us------------------*/
+
+.clickit-about {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clickit-about h1 {
+    font-size: 3em;
+    color: #F26522;
+    padding-top: 2%;
+}
+
+.clickit-about p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 2%;
+}
+
+/*--------------What We Do------------------*/
+
+.what-we-do-container {
+    width: 100%;
+    /*height: 750px;*/
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(rgba(36, 67, 129, 0.9), rgba(36, 67, 129, 0.9)), url("https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/glenn-carstens-peters-210782-unsplash.jpg") no-repeat center fixed;
+    background-size: cover;
+    color: white;
+    padding: 1% 1%;
+    position: relative;
+}
+
+.what-we-do-container:before {
+    transform: skewY(-5deg);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    z-index: -12;
+    background-color: #244381;
+}
+
+.what-we-do-container:after {
+    transform: skewY(5deg);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    z-index: -12;
+    background-color: #244381;
+}
+
+#what-we-do-header {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Bitter', serif;
+    padding: 60px 0;
+}
+
+.services-container {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+}
+
+.box {
+    background-color: #244381;
+    padding: 1% 1%;
+    margin: 3%;
+    width: 90%;
+    height: 13em;
+    border-radius: 8px;
+    box-shadow: 4px 3px 10px 0.5px black;
+    overflow: hidden;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.box .icon {
+    width: 9em;
+    height: 9em;
+    padding-top: 2em;
+    color: #F26522;
+    border: 2px solid #F26522;
+    border-radius: 5em;
+    text-align: center;
+    display: flex;
+    font-size: 0.4em;
+    transition: all 1s ease-in-out;
+}
+
+/* Icon Border */
+
+.fa-map-marker-alt {
+    padding-left: 0.64em;
+}
+
+.fa-video {
+    padding-left: 0.5em;
+}
+
+.fa-users {
+    padding-left: 0.4em;
+}
+
+.fa-searchengin {
+    padding-left: 0.5em;
+}
+
+.fa-code {
+    padding-left: 0.4em;
+}
+
+.fa-paint-brush {
+    padding-left: 0.5em;
+}
+
+.box h3 {
+    font-size: 1.4em;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.box p {
+    text-align: center;
+    margin: 8em auto 0 auto;
+    transition: all 1s ease-in-out;
+}
+
+/* Read More */
+
+.box .readMore {
+    display: block;
+    width: 6.8em;
+    height: 3em;
+    margin-left: calc(-6.8em /2);
+    padding-top: 0.5em;
+    background-color: #F26522;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 400;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all 1s ease-in-out;
+}
+
+/* Read More Hidden */
+
+.hidden {
+    background-image: none !important;
+    background-color: #244381 !important;
+}
+
+
+.hidden h3 {
+    margin-top: -5em;
+    z-index: 5 !important;
+}
+
+.hidden p {
+    margin-top: 4em;
+    transition: all 1s ease-in-out;
+}
+
+.hidden .readMore {
+    width: 10em !important;
+    height: 3em !important;
+    padding-left: 1.4em;
+    margin-left: -5em !important;
+    left: 0 !important;
+    clip-path: none !important;
+    transform: rotate(50deg);
+    font-size: 1.2em !important;
+}
+
+.hidden .readMore .test {
+    display: block !important;
+    margin-bottom: 5em !important;
+}
+
+
+.hidden .icon {
+    margin-left: 60% !important;
+    border-radius: 15em;
+    font-size: 0.9em;
+    opacity: 0.5;
+}
+
+/* Box background Images*/
+
+.google-tour-box {
+    background: linear-gradient(rgba(36, 67, 129, 0.8), rgba(36, 67, 129, 0.8)), url("/images/what-we-do-virtual.png") no-repeat center;
+    background-size: cover;
+}
+
+.fourk-video-box {
+    background: linear-gradient(rgba(36, 67, 129, 0.8), rgba(36, 67, 129, 0.8)), url("https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/what-we-do-4k.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.social-media-box {
+    background: linear-gradient(rgba(36, 67, 129, 0.8), rgba(36, 67, 129, 0.8)), url("https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/what-we-do-social.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.seo-box {
+    background: linear-gradient(rgba(36, 67, 129, 0.8), rgba(36, 67, 129, 0.8)), url("https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/what-we-do-seo.png") no-repeat center;
+    background-size: cover;
+}
+
+.web-dev-box {
+    background: linear-gradient(rgba(36, 67, 129, 0.8), rgba(36, 67, 129, 0.8)), url("https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/what-we-do-web.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.graphic-box {
+    background: linear-gradient(rgba(36, 67, 129, 0.8), rgba(36, 67, 129, 0.8)), url("https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/what-we-do-graphic.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/*--------------Testimonials------------------*/
+
+.testimonials-container {
+    text-align: center;
+}
+
+.testimonials-container h1 {
+    color: #F26522;
+    font-size: 3em;
+    padding: 60px 0;
+}
+
+.testimonial-box .testimonial-para {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 2%;
+    padding-top: 4%;
+}
+
+.testimonial-para:first-of-type {
+    padding-top: 0;
+}
+
+.client-img {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.client-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.client-img p {
+    padding: 2px;
+    margin: 0;
+}
+
+/*--------------Some Of Our Clients------------------*/
+
+.clients-box {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.clients-container {
+    position: relative;
+    background-color: #244381;
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
+    transform: skewY(-5deg);
+    padding-bottom: 10%;
+    padding-top: 3%
+}
+
+.clients-container > div {
+    transform: skewY(5deg);
+}
+
+.clients-container > h1 {
+    transform: skewY(5deg);
+}
+
+.clients-container h1 {
+    font-size: 3em;
+    padding: 60px 30px;
+    margin: auto;
+}
+
+.clients-container p {
+    font-family: 'Lato', sans-serif;
+    width: 80vw;
+    margin: auto;
+}
+
+.clients-container .client-logo img {
+    width: 200px;
+    padding: 7% 0 3%;
+}
+
+/*--------------Contact Form Section------------------*/
+
+/*----- Contact Us info ------*/
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-container:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #100B61;
+    transform: skewY(-5deg);
+    top: -12%;
+    left: 0;
+    z-index: -10;
+}
+
+.contact-us-container {
+    background-color: #100B61;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 20%;
+}
+
+.contact-us-box {
+    width: 80vw;
+    margin: auto;
+}
+
+.contact-us-box h1 {
+    color: white;
+    font-size: 3em;
+    padding-top: 20%;
+    margin: 0;
+}
+
+.contact-info {
+    color: #F26522;
+}
+
+.contact-info p {
+    padding-bottom: 0.4em;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+}
+
+.footer-icon {
+    padding-right: 5px;
+}
+
+.media-box {
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: inline-block;
+    border: 1px solid black;
+    background-color: #F26522;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.instagram:hover {
+    background-color: #cd486b;
+}
+
+.twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.pintrest:hover {
+    background-color: #BD081C;
+}
+
+.google:hover {
+    background-color: #DB4437;
+}
+
+.linkedin:hover {
+    background-color: #0077B5;
+}
+
+/*----- Contact Us form ------*/
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-container:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #100B61;
+    transform: skewY(-5deg);
+    top: -20%;
+    left: 0;
+    z-index: -10;
+}
+
+.form-container {
+    background-color: #100B61;
+    padding-bottom: 8%;
+}
+
+form {
+    width: 80vw;
+    margin: auto;
+}
+
+form label {
+    color: white;
+}
+
+form input[type=text] {
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #F26522;
+    width: inherit;
+}
+
+form input::placeholder {
+    color: rgba(242, 101, 34, 0.8);
+}
+
+form textarea {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    width: inherit;
+    color: #F26522;
+    margin-top: 10px;
+}
+
+form textarea::placeholder {
+    color: rgba(242, 101, 34, 0.8);
+}
+
+form button[type=submit] {
+    width: 100%;
+    background-color: #E82F0C;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+form button[type=submit]:hover {
+    background-color: #F26522;
+}
+
+
+/*----------------Footer----------------*/
+
+.footer {
+    width: 100%;
+    background-color: #100B61;
+    padding-bottom: 0.8em;
+}
+
+.footer ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li a {
+    font-size: 0.7em;
+    color: white;
+    text-decoration: none;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.footer ul li a:hover {
+    color: #F26522;
+}
+
+#copyright {
+    color: white;
+    padding-top: 0.9em;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.5em;
+    margin-bottom: -1.1em;
+}
+
+#homepage-form {
+    padding-top: 20%;
+}
+
+#homepage-form input {
+    margin-bottom: 2%;
+}
+
+/*------------------About Us Page Styles-----------------*/
+
+.about-us-container {
+    width: 100%;
+    background-color: #100B61;
+    color: white;
+}
+
+.about-us-container h1 {
+    color: #F26522;
+}
+
+/*------------------Contact Page Styles-----------------*/
+
+#contact-page-form {
+    background-color: #333192;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-page-title {
+    text-align: center;
+}
+
+/*Bryan's services*/
+
+.service-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.service-wrapper h2 {
+    padding: 2%;
+    font-size: 2em;
+}
+
+.service-wrapper p {
+    width: 80%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.service-wrapper img {
+    width: 80%;
+    max-width: 600px;
+}
+
+.services-btn {
+    margin-top: 2%;
+}
+
+/* Google tour section */
+
+.google-container p {
+    padding-top: 3%;
+}
+
+.google-container p:first-of-type {
+    padding-bottom: 3%;
+}
+
+.virtual-tour-box {
+    width: 80%;
+    margin: auto;
+}
+
+.virtual-tour-box iframe{
+    width: 80%;
+    max-width: 600px;
+    border: 4px solid black !important;
+}
+
+.google-cert {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Video section  */
+
+.video-container {
+    background-color: #100B61;
+    transform: skewY(-3deg);
+}
+
+.video-wrapper {
+    transform: skewY(3deg);
+}
+
+.video-box {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-wrapper h2 {
+    color: white;
+    padding-top: 8%;
+}
+
+.video-wrapper p {
+    color: white;
+    padding-top: 3%;
+}
+
+.video-wrapper p:last-of-type {
+    padding-bottom: 6%;
+}
+
+.video-container .video-iframe {
+    width: 80%;
+}
+
+/* Social Media section */
+
+.social-media-wrapper p {
+    padding: 6% 0;
+}
+
+.service-wrapper #social-box {
+    width: 80%;
+    margin: auto;
+}
+
+.service-wrapper #social-box img {
+    width: 80%;
+    max-width: 600px;
+    border: 4px solid black;
+}
+
+/* Seo Section */
+
+.seo-container {
+    background-color: #244381;
+    transform: skewY(-3deg);
+}
+
+.seo-wrapper {
+    transform: skewY(3deg);
+}
+
+.seo-container h2 {
+    color: white;
+    font-size: 2em;
+    padding-top: 8%;
+}
+
+.seo-img-box {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.seo-img-box img {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    border: 4px solid black;
+
+}
+
+.seo-container p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 6%;
+}
+
+/* Web Development Section */
+
+.web-development-container {
+    width: 100%;
+}
+
+.service-wrapper #dev-box {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.web-development-container p {
+    padding: 6% 0;
+}
+
+.line {
+    height: 2px;
+    width: 80%;
+    margin: auto;
+    background-color: #F26522;
+}
+
+/* Graphic Design Section */
+
+.graphic-design-container {
+    background-color: #333192;
+    color: white;
+    transform-origin: top left;
+    transform: skewY(3deg);
+    position: relative;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.graphic-design-container::after {
+    content: "";
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.graphic-design-wrapper {
+    transform: skewY(-3deg);
+    padding: 6% 0;
+}
+
+.graphic-img-box {
+    width: 80%;
+    margin: auto;
+}
+
+.graphic-img-box img {
+    border: 4px solid black;
+}
+
+.graphic-design-wrapper p {
+    padding: 6% 0 0;
+}
+
+.graphic-design-wrapper p:last-of-type {
+    padding-top: 4%;
+}
+
+/* Services Contact Section */
+
+.service-contact-section {
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    z-index: 400;
+    text-align: center;
+}
+
+.service-contact-section h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.service-contact-section .fa-arrow-circle-down {
+    display: block;
+    padding-top: 1%;
+}
+
+.service-contact-section .service-btn {
+    padding: 10px;
+    margin-top: 1%;
+    background-color: orange;
+    border: none;
+    border-radius: 40px;
+}
+
+.service-contact-section .service-btn:hover {
+    cursor: pointer;
+    background-color: #ff9b00;
+    border: 1px solid black;
+}
+
+/* Careers page */
+.career-banner{
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.9)), url("https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/careers-banner.jpg") no-repeat center fixed;
+    background-size:cover;
+}
+.career-banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.career-banner .career-banner-text{
+    color:white;
+    text-align: center;
+}
+.career-banner .career-banner-text #team-span{
+    display:block;
+}
+.career-id{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    color:white;
+    transform: translate(-50%);
+    margin-bottom:2%;
+}
+.career-id .career-id-box{
+    margin:auto;
+    text-align: center;
+    background-color:rgba(40,41,41,0.5);
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+}
+#down-arrow{
+    padding-top:6px;
+}
+.career-wrapper{
+    text-align:center;
+}
+.career-line{
+    text-align:center;
+}
+.career-wrapper h1{
+    font-size:2em;
+}
+.career-wrapper .career-line{
+    height:4px;
+    width:40%;
+    background:orange;
+    margin:auto;
+}
+#career-btn{
+    display: block;
+    background-color: orange;
+    border-radius: 3px;
+    margin: 7px auto 10px;
+}
+.job-box a{
+    text-decoration: none;
+}
+.career-footer{
+    margin-top:29px;
+}
+/* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
+
+@media only screen and (min-width: 37.5em) {
+    /*--------------Landing Area------------------ */
+    .container {
+        display: none;
+    }
+    .navigation li {
+        display: flex;
+    }
+    .header-phone {
+        margin: 1% 1%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /*--------------Testimonials--------------------*/
+    .testimonial-box {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        padding: 0 13%;
+    }
+    .testimonial-box:last-of-type {
+        margin-bottom: 10px;
+    }
+    #reversed-testimonial {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .client-img p {
+        margin: 0;
+        padding: 0;
+    }
+    .testimonial-box p:first-child {
+        margin-top: 10px;
+    }
+    .testimonial-box p:last-child {
+        margin-bottom: 20px;
+    }
+    .testimonial-para {
+        width: 98%;
+        padding-left: 2%;
+    }
+    #reversed-testimonial .testimonial-para {
+        width: 98%;
+        padding-right: 2%;
+    }
+    /*--------------Some of our clients--------------------*/
+    .client-box-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0 4%;
+    }
+    .client-box p {
+        width: 100%;
+        font-size: 0.9em;
+        padding: 5%;
+    }
+    /*--------------Contact--------------------*/
+    .contact-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        background-color: #100B61;
+    }
+    .contact-us-container {
+        width: 90%;
+        padding-left: 5%;
+    }
+    .contact-us-box {
+        width: 100%;
+        margin: auto;
+    }
+    .form-container {
+        width: 100%;
+        height: 100%;
+    }
+    form {
+        width: 95%;
+        margin: auto;
+        /* height: 100vh; */
+        padding-top: 20%;
+    }
+    form button[type=submit] {
+        width: 95%;
+    }
+    .service-wrapper p {
+        font-size: 1.4em;
+        line-height: 1.3;
+
+    }
+
+    /* Seo section */
+    .seo-wrapper h2 {
+        padding-top: 4%;
+    }
+    /* Graphic design */
+    .graphic-design-wrapper h2 {
+        padding: 0;
+        margin-top: 0;
+    }
+    .graphic-design-wrapper p:last-of-type {
+        padding-top: 1%;
+    }
+    /* Contact Page Styles */
+    .inner-form .final-form {
+        width: 80%;
+    }
+    /*HAMBURGER TO THE LEFT*/
+    .navigation-fixed .container-left {
+        display: block;
+        position: absolute;
+        left: 1.5em;
+        cursor: pointer;
+    }
+    /*-------------------*/
+    .services-container {
+        display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navigation-fixed ul {
+        width: 17em;
+    }
+    .navigation-phone {
+        display: block;
+    }
+}
+
+/* Only CSS rules that need to be changed to meet the LARGE layout go in here */
+
+@media only screen and (min-width: 64em) {
+    header {
+        display: flex !important;
+        justify-content: space-between;
+    }
+}
