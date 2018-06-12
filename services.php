@@ -45,7 +45,7 @@
         <div class="service-wrapper">
             <div class="google-container">
                 <h2>Google Virtual Tour</h2>
-                <div class="virtual-tour-box">
+                <div class="virtual-tour-box remove">
                     <img src="/images/google-virtual-tour-1.png" alt="virtual tour">
                 </div>
                 <p>Google 360 Virtual Tours take the technology of Google Street View inside the front door of your business. Google 360 Virtual Tours increase engagement by allowing a search engine user (also known as your potential customer) to see the interior of your storefront location(s). Just like any other business, Google appreciates and rewards those who use more of its offered products and services, meaning having a Google 360 Virtual Tour can help improve your search engine optimization (SEO) performance.</p>

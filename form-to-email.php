@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "rizky@clickitsocial.com";
-    $email_subject = "Testing";
+    $email_subject = "Clickit Social Form Submission";
     function died($error) {
         // your error code can go here
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";

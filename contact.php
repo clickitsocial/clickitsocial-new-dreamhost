@@ -28,7 +28,7 @@
                         <a href="/index.html">Home</a>
                     </li>
                     <li>
-                        <a href="/about/about.html">About Us</a>
+                        <a href="/about.php">About Us</a>
                     </li>
                     <li>
                         <a href="/services.php">Services</a>
@@ -106,7 +106,7 @@
                         <a href="">Contact Us</a>
                     </li>
                     <li>
-                        <a href="/careers.php">Careers</a>
+                        <a href="https://clickitsocial.com/wp-content/themes/clickitsocial-main/careers.php">Careers</a>
                     </li>
                 </ul>
                 <ul id="copyright">

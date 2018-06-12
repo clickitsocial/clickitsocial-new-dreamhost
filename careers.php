@@ -28,13 +28,13 @@
                     <a href="/index.html">Home</a>
                 </li>
                 <li>
-                    <a href="/about/about.html">About Us</a>
+                    <a href="/about.php">About Us</a>
                 </li>
                 <li>
-                    <a href="../services/services.html">Services</a>
+                    <a href="/services.php">Services</a>
                 </li>
                 <li>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/contact.php">Contact</a>
                 </li>
             </ul>
             <h2 class="navigation-phone">(702) CLICKIT</h2>

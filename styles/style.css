@@ -124,14 +124,15 @@ ul {
 .navigation-phone {
     font-size: 1.4em;
     color: #F26522;
-    margin-right: 2.5em;
+    margin-right: 1em;
     display: none;
 }
 
 .navigation-phone a {
     color: #F26522;
 }
-.about-us-navigation{
+
+.about-us-navigation {
     background-color: #244381;
 
 }
@@ -317,7 +318,8 @@ ul {
     object-fit: cover;
     z-index: -2;
 }
-.landing-picture{
+
+.landing-picture {
     position: absolute;
     top: 0;
     left: 0;
@@ -890,7 +892,8 @@ form button[type=submit]:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("/images/about-us.jpg") no-repeat !important;
     background-size: cover !important;
 }
-.about-us-content{
+
+.about-us-content {
     text-align: left;
     width: 80%;
     margin: 0 auto;
@@ -1237,76 +1240,225 @@ form button[type=submit]:hover {
 .career-footer {
     margin-top: 29px;
 }
+
 /*jssor slider loading skin spin css*/
 
- .jssorl-009-spin img {
-     animation-name: jssorl-009-spin;
-     animation-duration: 1.6s;
-     animation-iteration-count: infinite;
-     animation-timing-function: linear;
- }
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
- @keyframes jssorl-009-spin {
-     from {
-         transform: rotate(0deg);
-     }
-     to {
-         transform: rotate(360deg);
-     }
- }
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
- .jssora061 {
-     display: block;
-     position: absolute;
-     cursor: pointer;
- }
+.jssora061 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
 
- .jssora061 .a {
-     fill: none;
-     stroke: #fff;
-     stroke-width: 360;
-     stroke-linecap: round;
- }
+.jssora061 .a {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 360;
+    stroke-linecap: round;
+}
 
- .jssora061:hover {
-     opacity: .8;
- }
+.jssora061:hover {
+    opacity: .8;
+}
 
- .jssora061.jssora061dn {
-     opacity: .5;
- }
+.jssora061.jssora061dn {
+    opacity: .5;
+}
 
- .jssora061.jssora061ds {
-     opacity: .3;
-     pointer-events: none;
- }
+.jssora061.jssora061ds {
+    opacity: .3;
+    pointer-events: none;
+}
 
- .div-wrapper {
-     background-color: #244381;
-     display: flex;
-     justify-content: space-between;
-     align-content: center;
- }
- .image-wrapper{
-     width: 100%;
-     text-align: center;
- }
- .image-wrapper img{
-     width: 90%;
-     padding: 10%;
- }
- .lower-padding{
-     padding-top: 15%
- }
-.lower-padding2{
+.div-wrapper {
+    background-color: #244381;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.image-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.image-wrapper img {
+    width: 90%;
+    padding: 10%;
+}
+
+.lower-padding {
+    padding-top: 15%
+}
+
+.lower-padding2 {
     padding-top: 10%;
 }
 
+/*------------------Contact Page Styles-----------------*/
+
+.contact-page-banner{
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.9)), url("/images/contact-us.jpg") no-repeat center fixed;
+    background-size:cover;
+}
+.contact-page-banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.contact-page-banner .contact-page-banner-text {
+    color:white;
+    text-align: center;
+}
+.contact-page-banner .contact-page-banner-text #contact-span{
+    display:block;
+}
+.contact-page-id {
+    position: absolute;
+    bottom:0;
+    left:50%;
+    color:white;
+    transform: translate(-50%);
+    margin-bottom:2%;
+}
+.contact-page-id .contact-page-id-box{
+    margin:auto;
+    text-align: center;
+    background-color:rgba(40,41,41,0.5);
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+}
+#down-arrow{
+    padding-top:6px;
+}
+
+/*Contact Info*/
+
+.contact-page-info {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+}
+
+#map {
+    width: 40%;
+    height: 325px;
+    margin-top: 3%;
+    background-color: blue;
+}
+
+.contact-page-info span {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-right: 0.3em;
+}
+
+/*Contact Form*/
+.contact-page-title {
+    color: white;
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.contact-page-background {
+    width: 100%;
+    height: 500px;
+    background-color: #333192;
+    padding-top: 8%;
+}
+
+.contact-page-form-container {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#contact-page-form {
+    width: 100%;
+    height: 100%;
+}
+
+#contact-page-form input {
+    width: 50%;
+}
+
+#contact-page-form label {
+    color: white;
+}
+
+#contact-page-form input[type=text] {
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #F26522;
+    width: inherit;
+}
+
+#contact-page-form input::placeholder {
+    color: rgba(242, 101, 34, 0.8);
+}
+
+#contact-page-form textarea {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    width: inherit;
+    color: #F26522;
+    margin-top: 10px;
+}
+
+#contact-page-form textarea::placeholder {
+    color: rgba(242, 101, 34, 0.8);
+}
+
+#contact-page-form button[type=submit] {
+    width: 100%;
+    background-color: #E82F0C;
+    padding: 5px;
+    margin: 60px auto 0 auto;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-page-form button[type=submit]:hover {
+    background-color: #F26522;
+}
+
+.contact-page-title {
+    text-align: center;
+}
 /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
 
 @media only screen and (min-width: 37.5em) {
     /*--------------Landing Area------------------ */
-    .image-wrapper img{
+    .image-wrapper img {
         width: 75%;
     }
     .container {
@@ -1438,6 +1590,10 @@ form button[type=submit]:hover {
     .navigation-phone {
         display: block;
     }
+    .navigation-phone {
+        font-size: 1em;
+        padding: 1%;
+    }
 }
 
 /* Only CSS rules that need to be changed to meet the LARGE layout go in here */
@@ -1446,5 +1602,8 @@ form button[type=submit]:hover {
     header {
         display: flex !important;
         justify-content: space-between;
+    }
+    figure {
+        display: none;
     }
 }
